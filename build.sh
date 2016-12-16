@@ -18,6 +18,6 @@ cp ipxe/src/bin-x86_64-efi/ipxe.efi docker/
 
 IMAGE=kubermesh/dnsmasq-efi:${GIT_TAG}
 docker build -t ${IMAGE} docker
-#docker push ${IMAGE}
+docker push ${IMAGE}
 
 echo Built image: ${IMAGE}
